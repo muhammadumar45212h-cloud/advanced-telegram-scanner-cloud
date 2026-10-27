@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced Telegram Scanner</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1020;color:#eef2ff;font-family:system-ui,Arial}
+main{max-width:850px;margin:auto;padding:24px}
+header,.panel{background:#141c31;border:1px solid #293653;border-radius:16px;padding:20px;margin-bottom:18px}
+h1{margin:0 0 8px;font-size:27px}
+.muted{color:#a7b4d0}
+.status{display:inline-block;padding:7px 12px;border-radius:20px;background:#392c16;color:#ffd37a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.big{font-size:21px;font-weight:700;margin-top:10px}
+footer{font-size:13px;color:#a7b4d0}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Advanced Telegram Scanner</h1>
+<p class="muted">Market monitoring dashboard</p>
+<span class="status">WORKER NOT CONNECTED</span>
+</header>
+<section class="grid">
+<div class="panel"><div class="muted">Scanner</div><div class="big">Not connected</div></div>
+<div class="panel"><div class="muted">Signal feed</div><div class="big">Awaiting worker</div></div>
+<div class="panel"><div class="muted">Hosting</div><div class="big">Vercel</div></div>
+</section>
+<section class="panel">
+<h2>Deployment status</h2>
+<p>The dashboard is deployed separately from the Python scanner.</p>
+<p class="muted">No live prices or trading signals are displayed until a worker is securely connected.</p>
+</section>
+<footer>Informational dashboard only. No trade execution.</footer>
+</main>
+</body>
+</html>
